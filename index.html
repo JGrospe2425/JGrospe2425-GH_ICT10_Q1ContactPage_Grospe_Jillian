@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Golden Spoon</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+        }
+        .header {
+            background: linear-gradient(90deg, #ee93ec, #ee93ec);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 15px;
+            flex: 1 1 280px;
+            text-align: center;
+        }
+        .card h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .footer {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="Contact"></h1>
+        <p id="Note"></p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2 id="Location"></h2>
+            <p id="Street"></p>
+            <p id="City"></p>
+            <p id="Country"></p>
+        </div>
+        <div class="card">
+            <h2 id="Phone"></h2>
+            <p id="Main"></p>
+            <p id="Mobile"></p>
+        </div>
+        <div class="card">
+            <h2 id="Email"></h2>
+            <p id="Info"></p>
+            <p id="Support"></p>
+            <p id="Careers"></p>
+        </div>
+    </div>
+    <div class="footer" id="Footer">
+    </div>
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<script type="py" src="main.py"></script> <!-- Ensure this file is accessible -->
+</body>
+</html>
